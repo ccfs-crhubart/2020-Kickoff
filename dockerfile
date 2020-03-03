@@ -1,3 +1,11 @@
-FROM debian:sid
-RUN echo "building my first docker image"
-CMD echo "Hello 2020 Kickoff!"
+# comments
+FROM python:3
+
+ADD main.py /
+ADD diff.py /
+# ADD ssh.py /
+
+RUN pip install pystrich
+CMD [ "python", "./main.py" ]
+CMD [ "python", "./diff.py" ]
+# CMD [ "python", "./ssh.py" ]
