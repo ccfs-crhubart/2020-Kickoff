@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 import difflib, sys
 
 with open ("file1.txt", "r") as file1:
